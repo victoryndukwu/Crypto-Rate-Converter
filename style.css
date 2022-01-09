@@ -1,1 +1,23 @@
-/*  */
+/* variables */
+
+:root{
+    --color-lemon: rgb(175, 255, 47); /*dont use for text*/
+}
+
+/* main styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.header{
+   color: blue ;
+}
