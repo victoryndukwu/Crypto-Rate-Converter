@@ -1,21 +1,44 @@
-/* variables */
+/* style guide */
+/* 
 
+**** Container Classes
+page: 
+ - setting class of an element to page centers it's content
+
+flex-container-col:
+ - setting class of an element to container-col sets it's display to flex and flex direction to column
+
+flex-container-row:
+ - setting class of an element to container-row sets it's display to flex and flex direction to row
+
+
+ 
+*/
+
+
+
+/* variables */
 :root{
-    --color-lemon: rgb(175, 255, 47); /*dont use for text*/
+  --color-lemon: rgb(175, 255, 47); /*dont use for text*/
 }
 
 /* main styling */
-.container {
+.page {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.content-container {
+.flex-container-col {
   display: flex;
   flex-direction: column;
   height: auto;
+}
+
+.flex-container-row{
+  display: flex;
+  flex-direction: row;
 }
 
 .header{
