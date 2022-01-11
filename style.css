@@ -12,14 +12,22 @@ flex-container-row:
  - setting class of an element to container-row sets it's display to flex and flex direction to row
 
 
- 
+
 */
 
-
-
 /* variables */
-:root{
+:root {
   --color-lemon: rgb(175, 255, 47); /*dont use for text*/
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+
+/* reset */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* main styling */
@@ -36,11 +44,21 @@ flex-container-row:
   height: auto;
 }
 
-.flex-container-row{
+.flex-container-row {
   display: flex;
   flex-direction: row;
 }
 
-.header{
-   color: blue ;
+.link {
+  color: var(--color-white);
+text-decoration: none;
+}
+
+.header {
+  color: blue;
+}
+
+.question{
+  font-weight: bold;
+  font-size: 30px;
 }
