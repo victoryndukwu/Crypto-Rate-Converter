@@ -1,8 +1,16 @@
 /* style guide */
+
 /* 
 
+**** Class and ID Nomenclature
+classes are written using kebab case e.g class-name
+ids are written using camel case e.g. idName
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
 **** Container Classes
-page: 
+page/center: 
  - setting class of an element to page centers it's content
 
 flex-container-col:
@@ -10,8 +18,6 @@ flex-container-col:
 
 flex-container-row:
  - setting class of an element to container-row sets it's display to flex and flex direction to row
-
-
 
 */
 
@@ -22,16 +28,20 @@ flex-container-row:
   --color-black: #000;
 }
 
-
 /* reset */
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 /* main styling */
-.page {
+
+body {
+  background-color: rgb(200, 222, 250);
+}
+.page,
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,14 +61,46 @@ flex-container-row:
 
 .link {
   color: var(--color-white);
-text-decoration: none;
+
+  text-decoration: none;
 }
 
 .header {
   color: blue;
 }
 
-.question{
+.question {
   font-weight: bold;
   font-size: 30px;
+}
+
+.option-container {
+  height: 50px;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+}
+
+.option-letter {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  color: var(--color-white);
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.option-text-container {
+  display: flex;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.option-text {
+  font-size: 16px;
 }
